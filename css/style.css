@@ -1,4 +1,18 @@
-html, body{
-    margin:0;
+html, body {
+    margin: 0;
     background-color: antiquewhite;
+}
+
+h2 {
+    position: relative;
+    left: 50%;
+    margin-left: -110px;
+}
+
+img {
+    position: relative;
+    left: 50%;
+    margin-left: -209px;
+    border: 1px solid black;
+    border-radius: 10px;
 }

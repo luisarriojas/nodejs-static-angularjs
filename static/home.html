@@ -1,3 +1,7 @@
-<h1>this is the home.</h1>
-<br>
+<h2>this is the home</h2>
 <img id="img" src="/img/img.jpg">
+<script>
+    $("#img").click(function () {
+        $(this).animate({opacity: 0}, 500);
+    });
+</script>
