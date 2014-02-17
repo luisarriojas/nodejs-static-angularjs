@@ -14,8 +14,6 @@ var error404Url = "/static/404.html";
 
 server = http.createServer(function (req, res) {
     var path = url.parse(req.url).pathname;
-    console.log(req.url);
-
     switch (path) {
         /* Router section*/
         case "/":
