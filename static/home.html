@@ -1,7 +1,18 @@
-<h2>this is the home</h2>
+<h2></h2>
+<p>I have received a message class "{{ message.type }}" on {{ message.date }}</p>
+<p>The message is: {{ message.content }}</p>
 <img id="img" src="/img/img.jpg">
 <script>
     $("#img").click(function () {
         $(this).animate({opacity: 0}, 500);
     });
 </script>
+
+<!--<ul>
+    <li ng-repeat="phone in phones">
+        <p>{{ phone.name }}</p>
+
+        <p>{{ phone.snippet }}</p>
+    </li>
+</ul>-->
+

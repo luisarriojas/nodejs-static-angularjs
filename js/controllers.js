@@ -11,11 +11,18 @@ function webCtrl($scope, Meta) {
     $scope.webMeta = Meta.tags;
 }
 
-function homeCtrl($scope, Meta) {
+function homeCtrl($scope, $http, Meta) {
     $scope.webMeta = Meta.tags;
     $scope.webMeta.description = "Home page";
     $scope.webMeta.keywords = "home webserver";
     $scope.webMeta.title = "Home";
+
+    $http({
+        method: "GET",
+        url: "/data/home.json"
+    }).success(function (data) {
+            $scope.message = data;
+        });
 }
 
 function aboutCtrl($scope, Meta) {
