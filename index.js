@@ -43,8 +43,7 @@ send404Html = function (res) {
         if (error) return send404Text(res);
 
         res.writeHead(404);
-        res.write(data);
-        res.end();
+        res.end(data);
     });
 };
 
@@ -53,8 +52,7 @@ callAsset = function (asset, res) {
         if (error) return send404Html(res);
 
         res.writeHead(200);
-        res.write(data);
-        res.end();
+        res.end(data);
     });
 };
 
